@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="utf-8">
+    <meta name="description" content="Homepage">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Cadence Chen</title>
+    
+     <link rel="stylesheet" type="text/css" href="css/style1.css"> 
+   
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143165893-1"></script>
+<script>window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-143165893-1');
+
+</script>
+    </head>   
+<body>
+    <header>
+
+    <div class="container" >
+      <img src="pic/logo3.png" alt="myLogo" height="150" width="150" class="logo"> 
+    <nav >
+       <ul>
+   
+          <li><a href="cadence.html">Home</a></li>
+           <li><a href="#about">About</a></li>
+           <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        
+    </nav>
+        
+      </div>  
+       
+ </header>
+<section class="home">
+ 
+        
+    <div class="container home-intro">
+        <img class="myself" src="pic/profilePic.jpeg" alt="a picture of me " heigh=200 width=200>
+        <h1 class="homeTitle">Hello<br> I'm Cadence </h1>
+        <p>Software Engineer </p>
+        </div>
+      
+ </section>   
+<section id="about">
+    <div class="container">
+    <h1> About</h1>
+      <div class="flex-container icon">
+          <figure>
+         <img src="pic/reponsive.png" alt="responsive icon" height="100" "width=100" class="responsive"><br>
+            <figcaption>
+                Responsive Design
+              </figcaption>
+              </figure>
+         <figure>
+             <img src="pic/webDesign.png" alt="responsive icon" height="100" "width=100" class="design"><br>
+             <figcaption>
+                Web Design
+             </figcaption>
+          </figure>
+          <figure>
+          <img src="pic/interface.png" alt="responsive icon" height="100" "width=100" class="interface">
+              
+            <figcaption>
+                User Interface
+          </figcaption>
+         </figure>
+    </div>
+      <div class="intro">
+          
+     <p class="self-intro"> 
+       <!-- <img src="pic/cadence.PNG" style="border:2px solid black" class="me" alt="a picture of me" height="150" width="200"><br><br> -->
+      I live in San Francisco for most of my life and I graduated from San Francisco State University with a Bachelor Degree in Hospitality and Tourism Management.
+      I am always curious of how to build a website and I want to build and design my own web application. Since tech is everywhere, I took web development classes in City College to strength my programming knowledge. 
+      I was quickly hooked to programming. Furthermore, I interned in San Francisco Living Wage Coalition as a web developer to manage the front end of homepage and Being a software engineer apprentice in Techtonica to build React web applications and a React Native 
+      application.
+      </p>
+    <div class="skill-list">
+           <ul>
+            <li>React Native</li><br>
+            <li>React.js</li><br>
+            <li>JavaScript</li><br>
+            <li>PostgreSQL</li> <br>  
+            <li>Firebase</li><br>
+            <li>CSS3</li>
+            <br><li>jQuery</li><br>
+            <li>HTML5</li><br>
+            <li>Adobe PhotoShop</li><br>
+            <li>WordPress</li><br>
+            <li>Express.js</li><br>
+          </ul>
+    
+    </div>
+          </div>
+        </div>
+
+    </section>
+    <section id="gallery">
+        <div class="container pictureList">
+<div class="picIntro">
+<h1 class="gaTitle">My Photoshop Gallery</h1>
+    <p>The following pictures I used blending modes, layer masks, and adjustment layers to create these stunning pictures.
+       <br> First, I used blending modes to blend the pictures well togther, then used layer masks to reveal the area I want on the top layer. Last, I used the adjustment layers to modify the brightness and color change.
+    </p>
+      </div>
+  
+<div class="slideshow-container ">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="pic/glass%20ball.jpg" style="width:100%">
+  <div class="text">Glass Ball</div>
+</div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="pic/dispersion.jpg" style="width:100%">
+  <div class="text">Dispersion</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="pic/christopher.jpg" style="width:100%">
+  <div class="text">Man</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+</div>
+        
+    </div>
+
+    </section>
+    <section id="contact">
+      <div class="container contactFormat">
+      <h1 class="contactTilte">Get In Touch
+       <span>Thank you for visiting the website. Please fill out the form if you have any questions for me, and I will<br> be in touch with you as soon as possible.</span>
+       </h1>
+    
+    <div class="form">
+   <form name="myForm" class="myForm" action="mailto:cadence1547@gmail.com" enctype="text/plain" onsubmit="return validate()" method="post"> 
+	
+       <p>Name:</p> <input type="text" size="30" name="name"><br><br>
+	<p>E-mail Address:</p><input type="text" size="30" name="email"> <br><br>
+	<p>Message:</p>  <textarea cols="35" rows="10" name="comment"> </textarea><br>
+	<input type="submit" value="Submit" name="Submit">	 
+		<input type="reset" value="Reset" name="Reset"> 		 
+    </form>
+          <img src="pic/envelope3.png" alt="Thank You Picture" class="envelope" height=300 width=400>
+        </div>
+        </div>
+    
+        </section>
+          
+
+<script src="js/myscript.js"></script>
+   </body>
+
+
+</html>
