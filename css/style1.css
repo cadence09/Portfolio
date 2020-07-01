@@ -1,388 +1,198 @@
-  /*=== Home Page ====*/
-*{
-        box-sizing: border-box;
-    }
-    body{
-          width:100%;
-        padding:0;
-        margin:0;
-         overflow-x: hidden;
-        font-family: 'Roboto', sans-serif;
-    }
-         
-          .container{
-        width:95%;
-        margin:0 auto;
-       
-        }
-    header{
-       background:url(../pic/headercolor.jpg);
-       height:100px;
-       padding:0;
-        margin:0;
-    }
-    .logo{
-        float:left;
-        height: auto;
-    }
-    nav ul{
-        margin:0; 
-        padding:0;
-        list-style:none;
-        float:right;
-       
-        
-    }
-    
-    nav li{
-       display: inline-block;
-       margin-top:45px;
-       padding:3px; 
-    }
-    
-    nav a{
-       font-weight:900;
-        text-decoration:none;
-        font-size:20px;
-        padding:2px;
-    }
-    nav a:hover{
-        color:chocolate;
-    }
-         .home{
-  background-image:url(../pic/mountains-1412683_1280.jpg); 
-    padding:22% 0;
-    background-repeat: no-repeat;
+/* === Home Page ==== */
+body{
+  width:100%;
+padding:0;
+margin:0;
+ overflow-x: hidden;
+font-family: 'Roboto', sans-serif;
+}
+
+
+.container{
+  text-align:center;
+  margin:2% 5% 0
+}
+
+#logo{
+  width:30%;
+  height:30%
+}
+nav ul,.skill-list ul li{
+ list-style:none;
+ padding:0;
+ margin-top:0
+}
+
+nav li{
+  display:inline-block;
+  padding:0 2%
+}
+
+nav a:hover{
+  color:chocolate;
+}
+#homePage{
+  background-image:url(../pic/mountains-1412683_1280.jpg);
+  background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    position:absolute;
-        left:0;
-        right:0;
-    text-align:center;
-        
-    }
-         .home-intro{
-        position:relative;
-        margin-left:0;
-        margin-right:0;
-    }
-    
-.myself{ 
-    margin-top:-15%;
-    transition: all .2s ease-in-out; 
-    border: 10px solid white;
-    border-radius: 50%;
+}
+.home-intro{
+  color:#d5e3eb;
+  padding-bottom: 7%;
+  margin-bottom: -6%;
+  margin-top: 0;
+}
+.myself{
+  margin:2% 0 0 0;
+  transition: 300px .2s ease-in-out; 
+  border: 10px solid white;
+  border-radius: 50%;
 }
 .myself:hover { 
-    transform: scale(1.2); 
+  transform: scale(1.2); 
 }
 
-    .homeTitle{
-        color:black;
-        margin-top:25px;
-    }
-  /* ==== About Page Design === */
-        #about{
-          position:absolute;
-          top:100vh;
-         background:linear-gradient(#41415d,skyblue,white);
-          
-          
-     }
-        h1{
-            text-align: center;
-        }
-        .flex-container, .intro{
-            display:flex;
-            flex-wrap:wrap;
-            flex-direction:row;
-            justify-content:space-evenly;
-            width:100vw;
-            
-        }
-         .intro{
-            justify-content:center;
-            position:relative;
-            top:10vh;
-            
-        }
-        .self-intro{
-          width:40%;
-          text-align: left;
-          margin-top: 0;
-        
-            
-        }
-       
-        .self-intro{
-            margin-left:-20%;
-        }
-        .skill-list{
-            padding-left: 5%;
-            column-count:2;
-        }
- #gallery{
-            position:absolute;
-            top:200vh;
-           background-image: url(../pic/yellowflower.jpg);
-            background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position:absolute;
-        left:0;
-        right:0;
-        padding-top:5%;
-        }
-    
-h1.gaTitle(
-   font-size:5px;
-)
-.mySlides {
-    display: none;
-    }
+/* === About Page ==== */
+h1{
+  text-align: center;
+  padding-top:5%
+}
 
+#aboutPage{
+  background:linear-gradient(#41415d,skyblue,white);
+}
+.iconContainer, .mySlides{
+  display:none
+}
 
+.self-intro{
+  text-align: left;
+
+}
+
+.pictureList{
+  text-align: left;
+}
 /* Slideshow container */
 .slideshow-container {
 max-width:50vh;
-  position: relative;
-  margin: 5% auto 0;
+position: relative;
+margin: 5% auto 0;
 
 }
-   
+ 
 /* Next & previous buttons */
 .prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-    
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+padding: 16px;
+margin-top: -22px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
   
+
 }
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+right: 0;
+border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+background-color: rgba(0,0,0,0.8);
 }
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 50px;
-  width: 100%;
-  text-align: center;
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 50px;
+width: 100%;
+text-align: center;
 }
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #66ccff;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+color: #66ccff;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
 }
 
 /* The dots/bullets/indicators */
 .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+background-color: #717171;
 }
 
 /* Fading animation */
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+from {opacity: .4} 
+to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+from {opacity: .4} 
+to {opacity: 1}
 }
 
-/* ===Contact ===
- #contact{
-          
-            position:absolute;
-            top:320vh;
-          
-        left:0;
-        right:0;
-    text-align:center;
-            
-         
-        }
-         h1.contactTilte,.form{
-      text-align: center;
-      
-    }
-     h1.contactTilte span{
-          font-size:15px;
-        display:block;
-       
-        }
-        .envelope{
-            position:relative;
-            left:25%;
-            margin-top:-20%;
-            
-        } */
-/* === Mobile & Tablet === */
+@media only screen and (min-width: 600px){
+  .header{
+    max-height: 600px;
+    margin-top: 0%;
+    padding: 1% 5% 9%;
+  }
+  #logo{
 
-@media only screen and (min-width: 320px) and (max-width:480px){
-    
-    header{
-       
-          display:block;
-             margin-left: auto;
-  margin-right: auto;
-        margin-bottom:18vh;
-      
-    }    
-    .home{ 
-            position:relative;
-            height:70vh;
-            
-        
-        }
-        .logo{
-              height:70px;
-        display:block;
-             margin-left: auto;
-  margin-right: auto;
-            float:none;  
-        
-        }
-  
-        nav li{
-            display:block;
-            width:100vw;
-            padding:3px;;
-            margin:2px;;
-           }
-    nav li{
-        text-align:center;
-    }
+    height: 20%;
+    width: 15%;
+    float: left;
+  } 
    
-    .myself{
-       
-        height:100px;
-        width:100px;
-    }
-      #about{
-                height:100vh;
-          
-            }
-            .icon, .me{
-                display:none;
-            }
-            .self-intro, .skill-list{
-                 width:90%;
-                  text-align:left;
-                margin-left:0;
-                margin-right:0;
-                
-            }
-            
-            .self-intro{
-                margin-top:-11%;
-                text-align: left;
-               
-            }
-            .skill-list{
-              column-count:2;
-            }
-    #gallery{
-               
-               padding-bottom:10vh;
-               top:240%
-            } 
-            .pictureList{
-                margin-top:-20%;
-               
-            }
-        } 
-     
- @media only screen and (min-width: 481px) and (max-width:768px){
-   .icon{
-     display:none
-   }
-   .intro{
-     top:0;
-   }
-  .self-intro{
-    width:90%;
-    margin:0;
-  }
+   nav ul{
+    width: 200px;
+    float: right;
+    margin: 0;
+    padding-top: 4%;
+  } 
   .skill-list{
-    padding-top:5%;
-  }
-  #gallery{
-    top:192vh;
-    padding:0;
-  }
-  #contact{
-    top:300vh;
-  }
-    .envelope{
-      display:none;
-    }
+    /* padding-left: 5%; */
+    column-count:3;
 }
-/* === Laptop === */
+.iconContainer{
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction:row;
+  justify-content:space-evenly;
+}
+}
 
- @media only screen and (min-width: 769px) and (max-width:1025px){
-           .home{
-                height:90vh;
-          
-            }
-            .self-intro{
-              margin:0;
-            }
-     .envelope{
-                margin-top:-2%;
-                
-                
-            }
-        }
-
- @media only screen and (min-width:1026px){
-            .home{
-                height:100vh;
-          
-            }
-        }
-
-
+ 
