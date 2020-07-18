@@ -65,15 +65,15 @@ h1{
   display:none
 }
 
-.self-intro{
+.goConnect, .booktonica{
+  width: 100%;
+  height: auto;
+}
+.self-intro, .projectDes, .pictureList{
   text-align: left;
 
 }
 
-.pictureList{
-  text-align: left;
-}
-/* Slideshow container */
 .slideshow-container {
 max-width:50vh;
 position: relative;
@@ -184,8 +184,8 @@ to {opacity: 1}
     padding-top: 4%;
   } 
   .skill-list{
-    /* padding-left: 5%; */
     column-count:3;
+    padding-top:0;
 }
 .iconContainer{
   display: flex;
@@ -193,7 +193,18 @@ to {opacity: 1}
   flex-direction:row;
   justify-content:space-evenly;
 }
+.goConnect, .booktonica{
+  width: 50%;
+  height: auto;
 
+  
+}
+.goConnectDes, .booktonicaDes{
+  width:40%;
+  position: absolute;
+  left:50%;
+  margin:2%;
+}
 }
 
  
